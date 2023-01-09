@@ -46,7 +46,7 @@ If you report an invalid issue or ask for step-by-step support, your issue will 
 
 ## Features
 
-- Support for serving local filesystem, encrypted local filesystem, S3 Compatible Object Storage, Google Cloud Storage, Azure Blob Storage or other SFTP accounts over SFTP/SCP/FTP/WebDAV.
+- Support for serving local filesystem, encrypted local filesystem, [S3 Compatible Object Storage](https://github.com/drakkan/sftpgo/blob/main/docs/s3.md), [Google Cloud Storage](https://github.com/drakkan/sftpgo/blob/main/docs/google-cloud-storage.md), [Azure Blob Storage](https://github.com/drakkan/sftpgo/blob/main/docs/azure-blob-storage.md) or other [SFTP accounts](https://github.com/drakkan/sftpgo/blob/main/docs/sftpfs.md) over SFTP/SCP/FTP/WebDAV.
 - Virtual folders are supported: a virtual folder can use any of the supported storage backends. So you can have, for example, an S3 user that exposes a GCS bucket (or part of it) on a specified path and an encrypted local filesystem on another one. Virtual folders can be private or shared among multiple users, for shared virtual folders you can define different quota limits for each user.
 - Configurable [custom commands and/or HTTP hooks](./docs/custom-actions.md) on upload, pre-upload, download, pre-download, delete, pre-delete, rename, mkdir, rmdir on SSH commands and on user add, update and delete.
 - Virtual accounts stored within a "data provider".
